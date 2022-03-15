@@ -1,0 +1,181 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Grande";
+  line-height: 1;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2 {
+  font-family: 'Montserrat Alternates', sans-serif;
+}
+
+p, li {
+  font-family: 'Hind Siliguri', sans-serif;
+}
+
+body {
+  background-color: rgb(238, 237, 232);
+  max-width: 1170px;
+  width: 100%; 
+  margin: 0 auto;
+}
+header {
+  height: 72px;
+  width: 1170px;
+  position: fixed;
+  top: 0px;
+  /* Ubah z-index ke 10 */
+  z-index: 10;
+  background-color: rgb(238, 237, 232);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  color: rgb(101, 108, 116);
+  padding: 20px
+  
+}
+
+.nav ul {
+  display: flex; 
+  width: 40%;
+  justify-content: space-between;
+}
+
+.nav ul li a {
+  line-height: 32px;
+  color: rgb(101, 108, 116);
+}
+
+.home {
+  padding: 100px 20px;
+  background-image: url(https://img.freepik.com/free-vector/white-abstract-wallpaper_23-2148830027.jpg);
+  background-size: cover;
+  color: rgb(101, 108, 116);
+  text-align: center;
+}
+
+.foto {
+  width: 300px;
+  height: 300px;
+  object-fit: cover; 
+  border: 5px solid rgb(38, 33, 37);
+  border-radius: 30px;
+}
+
+.container p {
+  font-size: 16px;
+  margin: 10px 0 30px 0;
+}
+
+.btn {
+  margin: 10px;
+  color: rgb(101, 108, 116);
+}
+
+#about {
+  padding: 85px 20px;
+}
+
+.aboutme {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+.wrapper {
+  width: 50%;
+}
+
+.wrapper p {
+  line-height: 25px;
+}
+
+.wrapper ul li {
+  list-style: circle;
+  list-style-position: inside;
+  padding-left: 75px;
+  line-height: 25px;
+}
+
+#movie {
+  padding: 85px 20px;
+}
+
+.banner {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.cover img {
+  width: 250px;
+  height: 300px;
+  object-fit: cover; 
+  border: 5px solid rgb(38, 33, 37);
+  border-radius: 30px;
+  transition: 1s;
+}
+
+.cover img:hover {
+  transform: scale(1.2);
+}
+
+.cover p {
+  margin: 50px 0 75px 0;
+  font-size: 20px;
+}
+
+footer {
+  border-top: 1px solid rgb(38, 33, 37);
+  text-align: center;
+  color: rgb(101, 108, 116);
+  padding: 20px;
+  width: 100%;
+}
+
+footer h1 {
+  padding-bottom: 20px;
+}
+
+.menu-icon {
+    position: absolute;
+    right: 20px;
+    visibility: hidden;
+}
+
+@media all and (max-width: 1000px) {
+  header, .container, .aboutme, .banner {
+    width: 100%;
+  }
+}
+@media all and (max-width: 670px) {
+  header, .container, .wrapper {
+    width: 100%;
+  }
+  .wrapper ul li{
+    padding-left: 0;
+  } 
+  .wrapper ul {
+    padding-top: 50px;
+  }
+  .nav ul {
+    display: none;
+  }
+  .menu-icon {
+    visibility: visible;
+  }
+}
